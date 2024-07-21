@@ -1,0 +1,76 @@
+.container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  margin-top: 84px;
+  margin-bottom: 64px;
+  gap: 20px;
+}
+
+.principal {
+  flex: 1;
+  flex-wrap: wrap;
+
+  :hover {
+    cursor: pointer;
+  }
+
+  .principalMain {
+    height: 400px;
+
+    @media screen and (max-width: 719px) {
+      height: auto;
+    }
+  }
+
+  & h1 {
+    margin-top: 0;
+    font-size: 58px;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  & a {
+    text-align: left;
+    text-decoration: none;
+    color: black
+  }
+}
+
+.secondary {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  & a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.secondaryContainer {
+  justify-content: space-between;
+}
+
+.bulletsContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.bulletsPrincipal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+
+  @media screen and (max-width: 719px) {
+    grid-template-columns: 1fr;
+  }
+}

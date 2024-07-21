@@ -1,0 +1,21 @@
+.container {
+  flex: 1;
+  display: flex;
+  background-color: #EBEFF1;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+  max-height: 190px;
+  min-height: 190px;
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.title {
+  color: #000000;
+  opacity: 20%;
+  font-size: 33px;
+}

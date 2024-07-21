@@ -1,0 +1,21 @@
+{
+  "name": "sevn-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "web": "pnpm --filter @sevn-monorepo/web dev",
+    "server": "pnpm --filter @sevn-monorepo/server dev",
+    "start:all": "concurrently \"pnpm run web\" \"pnpm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
